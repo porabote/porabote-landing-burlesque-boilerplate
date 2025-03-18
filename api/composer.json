@@ -1,0 +1,9 @@
+{
+  "name": "porabote/client",
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/",
+      "Porabote\\": "porabote/src/"
+    }
+  }
+}
