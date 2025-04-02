@@ -23,13 +23,13 @@ class MainController
 
         $data = [
             'api' => 'ec3459df2701beb8334357d9ba7f283d',
-            'type' => 1929,
+            'type' => '10000000', // заменить тип
             'ip' => $this->getIP(),
             'phone' => $phone,
             //  'name' => 'Test Name',
             // 'club' => 'msk',
             'http_host' => $_SERVER['HTTP_HOST'],
-            'request_uri' => $_SERVER['REQUEST_URI'],
+            'request_uri' => str_replace('/api/', '', $_SERVER['REQUEST_URI']),
             'getResult' => true,
         ];
 
